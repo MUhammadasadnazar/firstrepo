@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+     android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+             android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        android:paddingVertical="7dp"
+        android:paddingHorizontal="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saving or Withdraw"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/colorwhite">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amont"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorblack"
+        android:textSize="20dp"></TextView>
+    <EditText
+        android:id="@+id/edtadorwithdraw"
+        android:inputType="number"
+       android:background="@drawable/edttextbackground"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Add Amount Here"></EditText>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/colorblack"
+        android:text="Choose One"></TextView>
+     <LinearLayout
+         android:padding="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="2"
+         android:orientation="horizontal">
+         <androidx.cardview.widget.CardView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             app:cardCornerRadius="10dp"
+             android:layout_marginRight="8dp"
+             android:layout_weight="1">
+             <Button
+                 android:background="@color/colorBlue"
+                 android:text="Savings"
+                 android:id="@+id/btnaddd"
+                 android:textColor="@color/colorwhite"
+                 android:layout_width="match_parent"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"></Button>
+
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:layout_width="0dp"
+             android:layout_marginLeft="8dp"
+             android:layout_height="wrap_content"
+             app:cardCornerRadius="10dp"
+             android:layout_weight="1">
+             <Button
+                 android:text="withdraw"
+                 android:id="@+id/btnwithdraww"
+                 android:layout_width="match_parent"
+                 android:textColor="@color/colorwhite"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"></Button>
+
+         </androidx.cardview.widget.CardView>
+
+
+     </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvsavee"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorblack"
+            android:layout_height="wrap_content"
+            android:text="Save"></TextView>
+        <TextView
+            android:onClick="cancelDialoge"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/colorblack"
+            android:layout_toLeftOf="@+id/tvsavee"
+            android:id="@+id/tvcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"></TextView>
+    </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

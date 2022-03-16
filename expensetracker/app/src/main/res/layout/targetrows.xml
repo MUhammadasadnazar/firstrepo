@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:paddingVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlue">
+                <TextView
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/tvtarettotalamnt"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvtargetdes"
+                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    ></TextView>
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/rvlot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remaining"
+                        android:textColor="@color/colorblack"
+                        android:textSize="12sp"></TextView>
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorblack"
+                        android:id="@+id/tvtargetremaining"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remaining"></TextView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvtargetsaved"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></TextView>
+                        <SeekBar
+                            android:id="@+id/sekbar"
+                            android:layout_width="150dp"
+                            android:thumb="@color/colorLightGray"
+                            android:progressTint="@color/colorBlue"
+                            android:layout_height="wrap_content"></SeekBar>
+                        <TextView
+                            android:textSize="12sp"
+                            android:textColor="@color/colorblack"
+                            android:text="Saved Amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/cvtargetphoto"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:id="@+id/ivtargetphoto"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            android:layout_height="match_parent"></ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

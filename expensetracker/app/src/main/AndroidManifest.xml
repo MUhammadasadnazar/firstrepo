@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zcorridor.expensetracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconesaving"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@drawable/iconesaving"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.zcorridor.expensetracker.Privacypolicy"></activity>
+        <activity android:name="com.zcorridor.expensetracker.MainActivity" />
+        <activity android:name="com.zcorridor.expensetracker.Transactionrecord" />
+        <activity android:name="com.zcorridor.expensetracker.Showtargetdescription" />
+        <activity android:name="com.zcorridor.expensetracker.Targetlist" />
+        <activity android:name="com.zcorridor.expensetracker.Incomeadd" />
+        <activity android:name="com.zcorridor.expensetracker.Incomelist" />
+        <activity
+            android:name="com.zcorridor.expensetracker.Expenselist"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name="com.zcorridor.expensetracker.Categorieslist" />
+        <activity android:name="com.zcorridor.expensetracker.CategoryaddActivity" />
+        <activity android:name="com.zcorridor.expensetracker.Splashscreen" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

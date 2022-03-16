@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Targetlist">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="130dp">
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="200dp"
+             android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/goaldeposit"></ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              android:background="@drawable/savingtrackerbackground">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:text="SAVING GOALS"
+                android:textSize="22dp"
+                android:textColor="@color/colorwhite"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/recordbackground"
+                 android:onClick="showRecord"
+                android:padding="8dp"
+                android:text="RECORD"
+                android:textColor="@color/colorwhite"></TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp"
+                 android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20sp"
+                    android:id="@+id/totalsavinggoals"
+                     android:textColor="@color/colorwhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+                <TextView
+                    android:text="Total Saving"
+                    android:textColor="@color/colorwhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="140dp"
+            android:id="@+id/recyclerviewtarget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            ></androidx.recyclerview.widget.RecyclerView>
+        <androidx.cardview.widget.CardView
+            android:onClick="addtTarget"
+            app:cardCornerRadius="27.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/colorwhite"
+            android:layout_width="55dp"
+            android:layout_height="55dp">
+            <ImageView
+                android:layout_margin="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_add_circle_24"
+                ></ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView4"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ads:adSize="BANNER"></com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>
+
+ 

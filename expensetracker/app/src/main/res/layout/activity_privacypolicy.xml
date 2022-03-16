@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Privacypolicy">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:textColor="@color/colorwhite"
+        android:text="Privacy Policy"
+        android:background="@drawable/depositblueshape"
+        android:gravity="center"
+        android:textSize="30dp"></TextView>
+    <WebView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/webid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="privacy"></WebView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:paddingHorizontal="20dp"
+        android:background="@color/colorBlue"
+        android:onClick="agree"
+        android:textColor="@color/colorwhite"
+
+        android:text="Agree"></Button>
+
+</LinearLayout>
